@@ -1,0 +1,21 @@
+close_options = ['Да', 'Нет']
+questions = [
+    {'text': 'Шрек живет в лесу?', 'qtype': 'closed', 'options': close_options},
+    {'text': 'Подождии... Мы же не познакомились!!Как тебя зовут?', 'type': 'opened', 'options': None},
+    {'text': 'В какой части Шрек и Фиона женятся?', 'type': 'multiple_choice', 
+    'options': ['В первой', 'В второй'], 'right_answer': 'В первой'},
+    {'text': 'Сталкивались ли Шрек и Кот в Сапогах в фильмах "Шрек"?', 'qtype': 'closed', 'options': close_options},
+    {'text': 'Шрек - это огр?', 'qtype': 'closed', 'options': close_options},
+    {'text': 'Сколько всего частей Шрека?', 'type': 'number', 'options': None, 'right_answer': 4},
+    {'text': 'Кто был изгнан из 3/9 королевства', 'type': 'multiple_choice', 
+    'options': ['Румпель', 'Артур', 'Гарольд'], 'right_answer': 'Румпель'},
+    {'text': 'Шрек сравнивал себя с луковицей?', 'qtype': 'closed', 'options': close_options},
+    {'text': 'Шрек в начале фильма читает сказку?', 'qtype': 'closed', 'options': close_options},
+    {'text': 'Кто озвучивал персонажа Шрека в оригинальной версии фильма?', 'type': 'multiple_choice', 
+    'options': ['Майк Майерс', 'Том Хенкс', 'Джигурда', 'Галустян'], 'right_answer': 'Майк Майерс'},
+    {'text': 'Пряня и Монго - друзья?', 'qtype': 'closed', 'options': close_options},
+    {'text': 'Кто стал лучшим другом у Шрека? ', 'type': 'multiple_choice', 
+    'options': ['Кот в сапогах', 'Осел', 'Фиона', 'Пряня'], 'right_answer': 'Осел'},
+    {'text': 'Принца Чарминг - дурак?', 'qtype': 'closed', 'options': close_options},
+    {'text': 'Введите свой любимый момент в фильме Шрек:', 'type': 'opened', 'options': None},
+]
