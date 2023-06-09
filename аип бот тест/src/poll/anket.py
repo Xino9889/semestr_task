@@ -35,7 +35,7 @@ class Anket:
         
     def get_final_text(self, score):
         if score > 10:
-            return f'Спасибо за ответы, ты набрал: {score} баллов из 28 возможных, красавчик'
+            return f'Спасибо за ответы, ты набрал: {score} баллов из 36 возможных, красавчик'
         elif 1 <= score <= 4:
             return f'Всего {score} балл{"а" if 2 <= score <= 4 else ""}??? Чел посмотри заново Шрека, не позорься'
         else:

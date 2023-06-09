@@ -1,9 +1,15 @@
-from models import UsersAnswers
 from tinydb import TinyDB, Query
 from datetime import datetime
 
 # db.drop_table('Users')
-
+class UsersAnswers:
+    def __init__(self, LoadDate, Name, ChatId, TotalScore, **kwargs):
+        self.LoadDate = LoadDate
+        self.Name = Name
+        self.ChatId = ChatId
+        self.TotalScore = TotalScore
+        for key, value in kwargs.items():
+            setattr(self, key, value)
 
 class DbConnection:
     def __init__(self):
@@ -18,7 +24,6 @@ class DbConnection:
             Name=name,
             ChatId=chat_id,
             TotalScore=total_score,
-            A_0=None,
             A_1=None,
             A_2=None,
             A_3=None,
@@ -39,7 +44,7 @@ class DbConnection:
         text = self.questions.all()[qid]['text']
         options = self.questions.all()[qid]['options']
         return text, options
-
+    
     def get_user_answers(self, chat_id: int):
         return self.users_data.search(self.query.ChatId == chat_id)
     
