@@ -4,7 +4,7 @@ from poll.anket import Anket
 from telebot import types, telebot  # Импортируем модули types и telebot из библиотеки telebot
 import json # Импортируем модуль json для работы с данными в формате json
 
-bot = telebot.TeleBot("5916072464:AAGxUrQi9-pdWhQ1JXnz3e9ghvR4twClGsI") # Создаем экземпляр бота с токеном
+bot = telebot.TeleBot("3e9ghvR4twClGsI") # Создаем экземпляр бота с токеном
 anket = Anket(questions) # Создаем экземпляр анкеты с вопросами
 
 # Функция для создания кнопок с вариантами ответов
